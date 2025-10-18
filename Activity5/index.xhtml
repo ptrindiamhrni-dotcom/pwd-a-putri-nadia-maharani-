@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Form Reservasi Hotel</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Form Reservasi Hotel</h1>
+        <form>
+            <fieldset>
+                <legend>Data Pribadi</legend>
+
+                <label>Nama Lengkap:</label>
+                <input type="text" name="name" required="required" />
+
+                <label>Jenis Kelamin:</label>
+                <input type="text" name="gender" required="required" />
+
+                <label>Alamat Email:</label>
+                <input type="email" name="email" required="required" />
+
+                <label>No. Telepon:</label>
+                <input type="text" name="telp" required="required" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Detail Reservasi</legend>
+
+                <label>Nama Pemesan:</label>
+                <input type="text" name="reservation_name" required="required" />
+
+                <label>Tanggal Pemesanan:</label>
+                <input type="date" name="booking_date" required="required" />
+
+                <label>Tipe Kamar:</label>
+                <select name="room_type" required="required">
+                    <option>Deluxe</option>
+                    <option>Suite</option>
+                    <option>Standard</option>
+                </select>
+
+                <label>Tipe Tempat Tidur:</label>
+                <select name="bed_type" required="required">
+                    <option>Single Bed</option>
+                    <option>Double Bed</option>
+                </select>
+
+                <label>Sarapan:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="breakfast" value="with" /> Dengan Sarapan</label>
+                    <label><input type="radio" name="breakfast" value="without" /> Tanpa Sarapan</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pembayaran</legend>
+
+                <label>Tanggal Check-in:</label>
+                <input type="date" name="checkin" required="required" />
+
+                <label>Tanggal Check-out:</label>
+                <input type="date" name="checkout" required="required" />
+
+                <label>Metode Pembayaran:</label>
+                <select name="payment_method" required="required">
+                    <option>Cash</option>
+                    <option>Credit Card</option>
+                    <option>Transfer</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Kirim Reservasi" class="submit-btn" />
+        </form>
+    </div>
+</body>
+</html>
